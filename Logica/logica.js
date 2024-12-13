@@ -30,7 +30,7 @@ const user = {
 for(const key in user){
     if(key == 'nome'){
         const names = user[key].split(' '); // divide o nome em array
-        user[key] = '' // deixa a key nome vazia
+        user[key] = '' // deixa a key nome vazia para não juntar com o nome antigo 
        
         for(const name of names){ // percorre cada nome dentro da array
             const normalizedName = name.toLowerCase() // deixa todas as letras minusculas
