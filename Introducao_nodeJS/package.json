@@ -1,0 +1,22 @@
+{
+  "name": "introducao_nodejs",
+  "version": "1.0.0",
+  "description": "- IO (input e output): leitura e saída de dados, interação com prompts de usuários;\r - Módulo Console;\r - Env;\r - Módulos de Rede;\r - Datas e Horários: utilizando luxxon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

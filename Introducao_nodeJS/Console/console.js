@@ -7,7 +7,8 @@ const path = require('node:path')// variavel para manipular caminhos, o node na 
 
 const filePath = path.join(process.cwd(), 'texto.txt')
 const fileOutPath = path.join(process.cwd(), 'texto-com-linhas.txt')
-
+const dotenv = require('dotenv')
+dotenv.config()
 // join = junta os arqumentos
 // process indica a pasta que está rodando no diretório atual 
 
@@ -38,5 +39,6 @@ fs.readFile(filePath, {}, (erro, dados) =>{
             return
         }
         })
+        console.log(`Arquivo salvo no buckets ${process.env.S3_BUCKET}`)
     console.timeEnd('manipular arquivos')
 })
